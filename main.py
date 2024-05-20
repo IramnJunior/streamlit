@@ -124,11 +124,6 @@ with st.sidebar:
                                        "icon": {"visibility": "hidden", "font-size": "0px"},
                                        })
 
-
-db = SQLDatabase.from_uri("mysql+mysqldb://root:admin@localhost:3306/empresa_inseminacao")
-
-
-
 prompt = ChatPromptTemplate.from_messages(
     [
         ("system", "Voce sera um chatbot em conversa com um humano. Fale somente em Portugues"),
